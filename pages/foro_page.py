@@ -1,4 +1,6 @@
 import flet as ft
+from datetime import datetime   # ✅ <--- agregado
+
 
 def ForoPage(page: ft.Page):
     page.title = "Foro Académico - EL AJA"
@@ -15,9 +17,13 @@ def ForoPage(page: ft.Page):
 
     def enviar_mensaje(e):
         if entrada.value.strip():
+
+            # ✅ Obtener hora actual
+            hora = datetime.now().strftime("%H:%M")
+
             mensajes.controls.append(
                 ft.Text(
-                    f"👤 Tú: {entrada.value}",
+                    f"👤 Tú ({hora}): {entrada.value}",
                     weight="bold",
                     color=ft.Colors.BLUE_600,
                 )
