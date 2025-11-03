@@ -1,0 +1,16 @@
+# --- Carpetas que NO deben subirse ---
+venv/
+__pycache__/
+*.pyc
+
+# --- Archivos sensibles ---
+firebase_config.json
+*.env
+
+# --- Archivos temporales o de sistema ---
+.DS_Store
+Thumbs.db
+
+# --- Archivos de build (si has compilado la PWA) ---
+build/
+dist/
