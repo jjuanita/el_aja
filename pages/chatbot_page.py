@@ -22,6 +22,7 @@ def ChatbotPage(page: ft.Page):
             wrap=True,
         )
 
+
     # --- Generar submenús dinámicos ---
     def submenu_horario():
         opciones = ["🆕 Registrar horario", "📋 Revisar horario"]
